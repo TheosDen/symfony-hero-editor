@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+<div id="wrapper">
+    <div id="container">
+        <div class="heroes-list">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+
+                {% for hero in heroes %}
+                    {% include 'hero.twig' %}
+                {% endfor %}
+
+            </div><!-- /.row -->
+
+        </div>
+    </div>
+</div>
+{% endblock body %}
+
